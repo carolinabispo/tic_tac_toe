@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "name": "tic-tac-toe",
+  "description": "��#\u0000 \u0000t\u0000i\u0000c\u0000_\u0000t\u0000a\u0000c\u0000_\u0000t\u0000o\u0000e\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "homepage": "https://carolinabispo.github.io/tic_tac_toe",
+  
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinabispo/tic_tac_toe.git"
+  },
+  "keywords": [
+    "jogo",
+    "da",
+    "velha",
+    "tic-tac-toe",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Carolina Bispo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolinabispo/tic_tac_toe/issues"
+  },
+  "homepage": "https://github.com/carolinabispo/tic_tac_toe#readme"
+}

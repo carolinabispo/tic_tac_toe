@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px ;
+}
+
+.board{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.cell{
+    border: none; 
+    width: 80px; 
+    height: 80px; 
+     display: flex;  
+     align-items: center; 
+    justify-content: center;  
+    font-size: 24px; 
+    text-align: center; 
+    cursor: pointer; 
+    flex-direction: row;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 24px;
+  }
+  
+  .btn-1 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+  /* Created by http://grohit.com/  */
+  footer a,
+  .btn-1 a,
+  .btn-2 a {
+    text-decoration: none;
+    border: 2px solid #010100;
+    padding: 15px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  span {
+    position: relative;
+    /* z-index coz when we put bg to before and after this span text will not be visible */
+    z-index: 3;
+  }
+  
+  /* Button 1 styles */
+  
+  .btn-1 a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    /*100% plus double the times left values*/
+    height: calc(100% - 10px);
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .btn-1 a:hover::before,
+  .btn-2 a:hover::before {
+    transform: scaleY(0);
+  }
+  
+  .btn-1 a::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    /*100% plus double the times left values*/
+    height: calc(100% + 10px);
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  /* Created by http://grohit.com/  */
+  
+  .btn-1 a:hover::after,
+  .btn-2 a:hover::after {
+    transform: scaleX(0);
+  }
+  
+  /* Button 2 styles */
+  
+  .btn-2 a {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-2 a:hover {
+    color: #000000;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-2 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .btn-2 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  
+  /* Created by http://grohit.com/  */
+  footer{
+      text-align: center;
+    font-size: 10px;
+  }
+
+.cell:focus{
+    outline: none;
+}
+#c1{
+    border-bottom: 1px solid gray; 
+    border-right: 1px solid gray; 
+}
+#c2 { 
+    border-top: 1px solid gray; 
+    border-right: 1px solid gray; 
+    border-bottom: 1px solid gray;
+    /* border-left: 1px solid gray;  */
+} 
+  
+#c3 { 
+    /* border-bottom: 1px solid gray;  */
+    /* border-left: 1px solid gray;  */
+    border-right: 2px solid gray;
+    border-top: 1px solid gray;
+} 
+  
+#c4 { 
+    /* border-top: 1px solid gray;  */
+    border-bottom: 1px solid gray; 
+    border-right: 2px solid gray; 
+    border-left: 1px solid gray;
+} 
+      
+#c5 { 
+    border: 1px solid gray; 
+} 
+  
+#c6 { 
+    border-top: 1px solid gray; 
+    /* border-bottom: 1px solid gray;  */
+    border-right: 1px solid gray; 
+} 
+  
+#c7 { 
+    /* border-top: 1px solid gray;  */
+    /* border-right: 1px solid gray;  */
+} 
+  
+#c8 { 
+    border-top: 2px solid gray; 
+    border-bottom: 1px solid gray; 
+    border-left: 1px solid gray; 
+} 
+#c9 { 
+  
+    border-top: 1px solid gray; 
+    border-left: 1px solid gray; 
+} 
+
+#winner{
+color: black;    height: 30px;
+}
